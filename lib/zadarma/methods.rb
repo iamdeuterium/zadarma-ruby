@@ -28,6 +28,9 @@ module Zadarma
       request :put, "/sip/redirection/", params.merge(id: id)
     end
 
+    def pbx_record_request(call_id: nil, pbx_call_id: nil, **params)
+      request :get, "/pbx/record/request/", params.merge(call_id: call_id, pbx_call_id: pbx_call_id)
+    end
 
     def pbx_internal
       request :get, "/pbx/internal/"

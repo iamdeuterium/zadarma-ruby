@@ -36,6 +36,7 @@ or
 * `set_sip_caller(id, number)` - change of CallerID
 * `redirection(params = {})` - get call forwarding status on SIP-numbers
 * `set_redirect(id, params)` - enable/disable sip forwarding
+* `pbx_record_request` - get record links
 * `pbx_internal` - list PBX internal numbers
 * `pbx_record(id, status, params = {})` - toggle call recording
 * `send_sms(number, message, params = {})` - send sms
