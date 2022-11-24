@@ -41,7 +41,7 @@ or
 * `pbx_record(id, status, params = {})` - toggle call recording
 * `send_sms(number, message, params = {})` - send sms
 * `statistics(date_start, date_end, params = {})` - get stats
-* `pbx_statistics(date_start, date_end)` - get PBX stats
+* `pbx_statistics(date_start, date_end, params = {})` - get PBX stats
 * `direct_numbers` - get direct numbers
 * `documents_groups_list` - get document groups
 * `direct_numbers_available(direction_id)` - get direct numbers available for purchase

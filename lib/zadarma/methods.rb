@@ -55,8 +55,8 @@ module Zadarma
       result
     end
 
-    def pbx_statistics(time_start, time_end)
-      request :get, "/statistics/pbx/", start: time_s(time_start), end: time_s(time_end)
+    def pbx_statistics(time_start, time_end, params = {})
+      request :get, "/statistics/pbx/", params.merge(start: time_s(time_start), end: time_s(time_end))
     end
 
     def direct_numbers
